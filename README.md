@@ -41,10 +41,23 @@ $ source venv/bin/activate
 $ pip install -r requirements.txt
 ```
 
-## Run Python 
+## Run Python (supports project creation)
 ```bash
 python bamboo.py
 ```
+
+# Run Bamboo Java Spec (creates Project/Plan, configures plan permissions)
+1) Run by Maven
+    ```bash
+    cd bamboo-specs
+    mvn -Ppublish-specs
+    ```
+2) Run by Java
+    ```bash
+    cd bamboo-specs
+    mvn package -Pfat-jar
+    java -cp target/bamboo-specs-1.0.0-SNAPSHOT-jar-with-dependencies.jar tutorial.PlanSpec
+    ```
 
 ## See Also
 * [Bamboo Server Docker image](https://hub.docker.com/r/atlassian/bamboo-server)
