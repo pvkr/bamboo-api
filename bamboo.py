@@ -27,7 +27,7 @@ def create_project(name, key, desc=""):
 
 
 def run():
-    # create_project("Qwerty2", "QW2")
+    create_project("Qwerty2", "QW2")
     pass
 
 

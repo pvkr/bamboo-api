@@ -49,12 +49,12 @@ python bamboo.py
 # Run Bamboo Java Spec (creates Project/Plan, configures plan permissions)
 1) Run by Maven
     ```bash
-    cd bamboo-specs
+    cd bamboo-java-specs
     mvn -Ppublish-specs
     ```
 2) Run by Java
     ```bash
-    cd bamboo-specs
+    cd bamboo-java-specs
     mvn package -Pfat-jar
     java -cp target/bamboo-specs-1.0.0-SNAPSHOT-jar-with-dependencies.jar tutorial.PlanSpec
     ```
