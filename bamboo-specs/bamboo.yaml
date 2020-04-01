@@ -1,7 +1,7 @@
 ---
 version: 2
 plan:
-  project-key: QW2
+  project-key: QW
   name: Plan from YAML
   key: LAUNCH
 
